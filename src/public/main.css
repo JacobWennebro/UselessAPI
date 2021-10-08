@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+
+*,*:before,*:after {
+    box-sizing: content-box;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: #FFF;
+    box-sizing: inherit;
+    font-family: 'Noto Sans Display', sans-serif;
+    margin: 0;
+}
+
+button {
+    padding: 0.25rem 2rem;
+    border-radius: 4px;
+    background-color: rgb(1, 62, 100);
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #FFF;
+    border: 0;
+}
+
+button:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+h1.main-title {
+    font-size: 3rem;
+}
+
+.rainbow {
+    background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+	to {
+		background-position: 450vh;
+	}
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.page-wrapper {
+    width: 45vw;
+    margin: 2rem auto;
+}
+
+@media screen and (max-width: 680px) {
+    .page-wrapper {
+        width: 90vw;
+    }
+}
+
+.popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    background: rgba(255,255,255,0.8);
+    color: #000;
+}
+
+.popup p {
+    margin: 0;
+    white-space: pre-line;
+}
+
+code {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    display: block;
+    white-space: pre;
+}
+
+a, a:link, a:visited {
+    color: lightskyblue;
+}

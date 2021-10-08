@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob's Useless APIs</title>
+    <link href="/static/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <div class="popup">
+        <p>No status codes.
+            Super unreliable service guaranteed!
+        </p>
+    </div>
+
+    <section class="home">
+        <div class="home-content">
+            <h1 class="main-title rainbow">Jacob's Useless APIs</h1>
+            <h3>A collection of useless scraper rest-apis. 🙌</h3>
+    
+            <ul>
+                <% for(route of apiRoutes) {%>
+                    <li><a href="/api/<%= route %>"><%= route %></a></li>
+                <% } %>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>

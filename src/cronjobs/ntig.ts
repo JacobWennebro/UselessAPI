@@ -8,7 +8,6 @@ import locations from '../data/ntischools.json';
 export const interval = "0 0 * * sun";
 
 export const job = async () => {
-
     const dataStore: NTIEmployee[] = [];
 
     for(const location of locations) {
@@ -39,6 +38,6 @@ export const job = async () => {
         }
     }
 
-    fs.writeFileSync(path.join(__dirname, `../data/ntiemployees.json`), JSON.stringify(dataStore, null, 4));
-    console.log("wrote to file");
+    fs.writeFileSync(path.join(__dirname, `../data/dynamic/ntiemployees.json`), JSON.stringify(dataStore, null, 4));
+    console.log("Updated NTI employees file");
 }
