@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacob Wennebro">
     <title>Jacob's Useless APIs</title>
     <link href="/static/main.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/jpg" href="/static/favicon.png"/>
 </head>
 <body>
 
     <div class="popup">
         <p>No status codes.
             Super unreliable service guaranteed!
+            Approved by <a href="https://github.com/kloska">Tim Lundström</a>
+            Poorly maintained by <a href="https://github.com/JacobWennebro">Jacob Wennebro</a>
         </p>
+    </div>
+
+    <div class="socials">
+        <a href="https://github.com/JacobWennebro/UselessAPI" target="_blank"><img alt="GitHub Logo" src="/static/GitHub-Logo.png"/></a>
     </div>
 
     <section class="home">
@@ -22,7 +30,7 @@
     
             <ul>
                 <% for(route of apiRoutes) {%>
-                    <li><a href="/api/<%= route %>"><%= route %></a></li>
+                    <li title="See <%= route %>"><a href="/api/<%= route %>"><%= route %></a></li>
                 <% } %>
             </ul>
         </div>

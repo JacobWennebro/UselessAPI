@@ -95,6 +95,27 @@ ul li {
     white-space: pre-line;
 }
 
+.socials {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0.5rem;
+
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.popup p a:link, .popup p a:visited {
+    color: blue;
+}
+
+.socials img {
+    width: 2rem;
+}
+
 code {
     background-color: rgba(255,255,255,0.2);
     border-radius: 8px;

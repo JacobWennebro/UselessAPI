@@ -15,7 +15,7 @@
         location: String
         email: String
         phone: String|null
-    }[]
+    }[] | null
 }
 ```
 
